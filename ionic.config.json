@@ -1,0 +1,7 @@
+{
+  "name": "tasklistaApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
