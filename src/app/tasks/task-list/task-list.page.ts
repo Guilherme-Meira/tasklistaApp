@@ -16,4 +16,7 @@ export class TaskListPage implements OnInit {
     this.tasks = this.taskService.getAll();
   }
 
+  delete(task: Task){
+    this.taskService.delete(task.id);
+  }
 }

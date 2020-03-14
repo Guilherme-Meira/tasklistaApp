@@ -4,8 +4,8 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   { path: '', redirectTo: 'task-list', pathMatch: 'full' },
   {path: 'task-list', loadChildren: './tasks/task-list/task-list.module#TaskListPageModule'},
-  {path: 'new', loadChildren: './tasks/task-list/task-list.module#TaskListPageModule'},
-  {path: 'edit/:id', loadChildren: './tasks/task-list/task-list.module#TaskListPageModule'},
+  {path: 'new', loadChildren: './tasks/task-form/task-form.module#TaskFormPageModule'},
+  {path: 'edit/:id', loadChildren: './tasks/task-form/task-form.module#TaskFormPageModule'},
 
 ];
 

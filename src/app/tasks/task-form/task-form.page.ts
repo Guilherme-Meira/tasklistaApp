@@ -23,11 +23,13 @@ export class TaskFormPage implements OnInit {
     if (id) {
       this.task = this.taskService.getById( parseInt(id) );
       this.title = 'Alterando Tarefa';
-    }
+    } 
+    
   }
 
   onSubmit(){
-
+    this.taskService.save(this.task);
+    this.router.navigate(['']);
   }
 
 }
